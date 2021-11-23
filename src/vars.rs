@@ -17,4 +17,15 @@ pub fn run() {
   // 型推論　_つけると意図的に使用しないってできる
   let _i1 = 3;
   let _f2 = 0.1;
+
+  // パターンマッチっぽい処理
+  let t1 = (500, 6.4, "Dummy");
+  let (_x, _y, _z) = t1;
+  println!("The value of t1 is: {} {} {}", t1.0, t1.1, t1.2);
+
+  let mut t2 = ((0, 1), (2, 3));
+  let ((ref mut x1_ptr, ref mut y1_ptr), _) = t2;
+  *x1_ptr = 5;
+  *y1_ptr = -5;
+  println!("{:?}", t2);
 }
