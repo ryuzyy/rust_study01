@@ -23,6 +23,8 @@ pub fn run() {
   let (_x, _y, _z) = t1;
   println!("The value of t1 is: {} {} {}", t1.0, t1.1, t1.2);
 
+  // 基本ポインターの値が入る
+  // 先頭に*をつけることで値にアクセスする
   let mut t2 = ((0, 1), (2, 3));
   let ((ref mut x1_ptr, ref mut y1_ptr), _) = t2;
   *x1_ptr = 5;
