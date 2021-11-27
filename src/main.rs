@@ -1,5 +1,5 @@
 mod ch02;
-mod stack_heep;
+// mod stack_heep;
 // mod vars;
 
 fn main() {
